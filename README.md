@@ -7,6 +7,7 @@ Each entry is self-contained, has its own README with usage, and is tested befor
 | Area | Entry | What it does |
 |------|-------|--------------|
 | Kubernetes | [pdb-coverage](kubernetes/pdb-coverage) | Lists Deployments/StatefulSets with no PodDisruptionBudget, so node drains during EKS upgrades or Karpenter consolidation can't take a whole service down. |
+| Kubernetes | [resource-requests-audit](kubernetes/resource-requests-audit) | Flags containers missing CPU/memory requests or limits, the usual cause of bad bin-packing, Karpenter mis-sizing and OOM kills on shared nodes. |
 
 ## Layout
 
